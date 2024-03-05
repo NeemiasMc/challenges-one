@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeTrix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1 id="title">
+            Cod<Span>MaTrix</Span>
+        </h1>
+    </header>
+
+    <main>
+        <section id="encoder">
+
+            <textarea name="phrase" id="textInput" placeholder="Digite seu texto aqui"></textarea>
+
+            <div id="buttons" >
+
+                <button id="encode" class="button" onclick="codificar()">
+                    Codificar
+                </button>
+
+                <button id="decode" class="button" onclick="decodificar()">
+                    Decodificar
+                </button>
+
+            </div>
+
+        </section>
+
+        <section id="decoder">
+            <p id="message">Nenhuma mensagem encontrada</p>
+            <button class="button" id="copyButton" onclick="copiar()">Copiar</button>
+        </section>
+        
+        <audio id="som" src="som/mouse-click-sound.mp3" hidden></audio>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
